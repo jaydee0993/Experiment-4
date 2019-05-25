@@ -1,0 +1,89 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	start:
+	cout << "Menu \n";
+	cout << "1. Add \n";
+	cout << "2. Subtract \n";
+	cout << "3. Multiply \n";
+	cout << "4. Divide \n";
+    cout << "5. Modulus \n";
+	cout << "Enter your choice \n";
+	char n;
+	cin >> n;
+
+	switch (n)
+	{
+		case '1':
+		{
+			cout << "Enter your two numbers: \n";
+			int a, b, s;
+			cin >> a;
+			cin >> b;
+			s=a+b;
+			cout << "Result: " << s;
+			cout << endl;
+		}
+		break;
+		case '2':
+		{
+			cout << "Enter your two numbers: \n";
+			int a, b, s;
+			cin >> a;
+			cin >> b;
+			s=a-b;
+			cout << "Result: " << s;
+			cout << endl;
+		}
+		break;
+		case '3':
+		{
+			cout << "Enter your two numbers: \n";
+			int a, b, s;
+			cin >> a;
+			cin >> b;
+			s=a*b;
+			cout << "Result: " << s;
+			cout << endl;
+		}
+		break;
+    	 case '4':
+		{
+			cout << "Enter your two numbers: \n";
+			int a, b, s;
+			cin >> a;
+			cin >> b;
+			s=a/b;
+			cout << "Result: " << s;
+			cout << endl;
+		}
+		break;
+		case '5':
+		{
+			cout << "Enter number: \n";
+			int a, b, s;
+			cin >> a;
+			cin >> b;
+			s= a%b;
+			cout << "Result= " << s;
+			cout << endl;
+		}
+		break;
+	
+ }
+	cout << "Do you want to continue? Press 'y' ";
+	char y;
+	cin >> y;
+	if (y=='y')
+	{
+		goto start;
+	}
+	else{
+		exit(0);
+	}
+	
+return 0;
+
+}
